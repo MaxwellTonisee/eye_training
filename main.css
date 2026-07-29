@@ -12,10 +12,32 @@ body {
 
 #video {
 	display: block;
-	width: 1920px;
-	height: 1080px;
-	max-width: 100%;
-	max-height: calc(100vh - 72px);
+	width: 1080px;
+	height: auto;
+	max-width: 80%;
+	max-height: 80%;
 	object-fit: cover;
+	margin: 10px auto;
 	background: #111;
+	border: 8px solid #6F9ADB;
+	border-radius: 8px;
+}
+
+#sign_instructions {
+	margin: 70px 20px;
+	font-size: 18px;
+	text-align: center;
+	border:#fff 2px solid;
+}
+
+#sign_instructions::before {
+	content: "👀";
+	display: block;
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+
+#kedipan_mata {
+	color: aqua;
+}
 }

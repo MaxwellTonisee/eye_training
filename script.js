@@ -22,4 +22,16 @@ const startStream = () => {
 
 startStream();
 
+var arahan = document.createElement('div');
+arahan.id = "sign_instructions";
+arahan.style.verticalAlign = "middle";
+arahan.textContent = "Please look at the camera";
 
+video.parentNode.insertBefore(arahan, video.nextSibling);
+
+
+const blinkDetection = document.createElement('div');
+blinkDetection.id = "kedipan_mata";
+blinkDetection.style.verticalAlign = "middle";
+blinkDetection.textContent = "Please blink your eyes";
+arahan.appendChild(blinkDetection);
