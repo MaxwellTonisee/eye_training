@@ -63,7 +63,7 @@ const loadModel = async () => {
     try {
         model = await window.blazeface.load();
         statusText.textContent = 'Model siap. Lihat ke kiri, tengah, atau kanan.';
-        modelStatusText.textContent = 'Model: BlazeFace siap';
+        modelStatusText.textContent = 'Model: BlazeFace, GazeV1.3 siap';
         analytics.accuracy = 92;
     } catch (error) {
         console.error(error);
