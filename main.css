@@ -1,21 +1,74 @@
 html, body {
-	margin: 0;
-	width: 100%;
-	min-height: 100%;
-	background: #000;
-	color: #fff;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(135deg, #07111f, #13243b);
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
 
 body {
-	padding: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.panel {
+    position: relative;
+    display: block;
+    width: min(95vw, 1200px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#video, #overlay {
+    display: block;
+    width: 100%;
+    aspect-ratio: 19 / 9;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: #111;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
 }
 
 #video {
-	display: block;
-	width: 1920px;
-	height: 1080px;
-	max-width: 100%;
-	max-height: calc(100vh - 72px);
-	object-fit: cover;
-	background: #111;
+    border: 4px solid #6f9adb;
+}
+
+#status-box {
+    margin-top: 16px;
+    padding: 12px 18px;
+    display: inline-block;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    min-width: 280px;
+}
+
+#status-text, #direction-text, #blink-text, #eye-state-text, #model-status, #accuracy-text, #confidence-text {
+    margin: 4px 0;
+    font-size: 18px;
+}
+
+#analytics-box {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+#analytics-chart {
+    width: 100%;	
+    max-width: 320px;
+    height: 140px;
+    margin-top: 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255,255,255,0.08);
 }
